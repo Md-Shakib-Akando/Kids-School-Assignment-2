@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+.quicksand-font {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+*{
+  padding: 0;
+  margin: 0;
+}
+
+/* navigation bar styles */
+header{
+  
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 15px 186px;
+  
+  
+  
+}
+.logo{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.nav-bar ul{
+  display: flex;
+  gap: 43px;
+}
+.nav-bar ul li{
+  list-style: none;
+  
+}
+.nav-bar ul li a{
+  display: block;
+  text-decoration: none;
+  
+}
+#home{
+  color: rgb(254, 163, 1);
+  font-family: Quicksand;
+  font-size: 20px;
+  font-weight: 700;
+}
+#about{
+  color: rgb(1, 172, 253);
+  font-family: Quicksand;
+  font-size: 20px;
+  font-weight: 500;
+}
+#fac{
+  color: rgb(5, 212, 223);
+  font-family: Quicksand;
+  font-size: 20px;
+  font-weight: 500;
+}
+#admission{
+  color: rgb(93, 88, 239);
+  font-family: Quicksand;
+  font-size: 20px;
+  font-weight: 500;
+}
+.btn1{
+  color: rgb(255, 255, 255);
+  font-family: Quicksand;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 12px;
+  border: none;
+  padding: 15px 60px;
+  background: rgb(254, 163, 1);
+}
+
+.hr-line{
+  background-color: orange;
+  display: none;
+}
+/* navigation bar responsive */
+@media screen and (max-width: 576px) {
+  .icon{
+    display: block;
+    cursor: pointer;
+  }
+  .icon .line{
+    width: 20px;
+    height: 3px;
+    margin: 6px;
+    background-color: black;
+  }
+  .nav-bar{
+    display: none;
+  }
+  .logo-title{
+    display: none;
+  }
+  .btn1{
+    display: none;
+  }
+  header{
+    margin: 0px 15px;
+    width: calc(100% - 30px);
+
+    
+  }
+  .hr-line{
+    display: block;
+    width: 99%;
+  
+  }
+  
+}
