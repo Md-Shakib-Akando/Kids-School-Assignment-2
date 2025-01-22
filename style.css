@@ -38,6 +38,7 @@ header{
   align-items: center;
   gap: 10px;
 }
+
 .nav-bar ul{
   display: flex;
   gap: 43px;
@@ -84,7 +85,7 @@ header{
 }
 
 .hr-line{
-  background-color: orange;
+  
   display: none;
 }
 
@@ -120,6 +121,7 @@ header{
   .hr-line{
     display: block;
     width: 99%;
+    background-color: orange;
   
   }
   
@@ -130,16 +132,16 @@ header{
 /* banner section styles */
 
 .banner-section{
-  max-width: 1440px;
   display: flex;
   align-items: center;
-  gap: 67px;
-  margin: 45px 186px;
+  gap: 200px;
+  margin-left: 186px;
+  margin-top: 25px;
 }
 
 .banner-title{
   
-  font-size: 89px;
+  font-size: 75px;
   font-weight: 700;
   line-height: 77px;
 }
@@ -150,12 +152,17 @@ header{
 .banner-description{
   color: rgb(17, 17, 17);
   font-family: Quicksand;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 400;
   line-height: 32px;
   margin-top: 32px;
   margin-bottom: 32px;
 
+}
+.banner-img{
+  
+  width: 100%;
+  
 }
 
 #em{
@@ -163,4 +170,48 @@ header{
 }
 #tv{
   color: rgb(1, 172, 253);
+}
+
+/* banner section responsive */
+
+@media screen and ( max-width: 576px){
+  .banner-section{
+    flex-direction: column-reverse;
+    align-items: normal;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 20px;
+    width: calc(100% - 40px);
+   
+    
+  }
+  .banner-details{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    width: calc(100% - 20px);
+  }
+.banner-title{
+    text-align: center;
+    font-size: 43px;
+    line-height: 45px;
+    
+  }
+  .banner-description{
+    text-align: center;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 18px;
+    
+  }
+  .banner-img img{
+    width: calc(100% - 20px);
+  }
+  
+  .primary-btn{
+    font-size: 16px;
+    padding: 10px 24px;
+    
+  }
 }
