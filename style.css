@@ -343,3 +343,24 @@ header{
   padding: 20px 30px;
 }
 
+
+/* card section responsive */
+
+@media screen and (max-width: 576px){
+  .card-section{
+    margin: 0 auto;
+    padding: 0px 20px;
+  }
+  .card-section-title{
+    font-size: 26px;
+    margin-top: 80px;
+    margin-bottom: 20px;
+  }
+
+  .cards{
+    
+    flex-direction: column;
+    
+    width: 100%;
+  }
+}
